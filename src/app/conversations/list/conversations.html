@@ -1,3 +1,4 @@
+<div>conversations.html start</div>
 <md-card *ngFor="let c of conversations|async" [routerLink]="[c.id]">
   <h3>
     <a [routerLink]="[c.id]">{{c.title}}</a>
@@ -6,3 +7,4 @@
     <span class="light">{{c.user.name}} [{{c.user.email}}]</span>
   </p>
 </md-card>
+<div>conversations.html end</div>

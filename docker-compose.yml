@@ -4,8 +4,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      DISPLAY: ":0"
+      DEBIAN_FRONTEND: "noninteractive"
     command: npm run start
     volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
       - .:/proj
       - /proj/node_modules
     ports:

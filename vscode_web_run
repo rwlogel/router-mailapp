@@ -1,0 +1,2 @@
+# Helper script to launch visual studio code inside the web container
+docker-compose run --rm -T web code --wait /proj &

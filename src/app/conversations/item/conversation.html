@@ -1,3 +1,4 @@
+<div>conversation.html start</div>
 <h2>
   {{(conversation|async).title}}
 </h2>
@@ -6,3 +7,4 @@
 
 <button md-raised-button (click)="goUp()">←</button>
 <button md-raised-button [routerLink]="['/', {outlets: {popup: 'compose'}}]">Reply</button>
+<div>conversation.html end</div>
